@@ -1,6 +1,6 @@
 alert("Bem-vindo ao site!")
 
-let nome = prompt("Digite seu nome")
+let nome = prompt("Digite seu nome jogador!")
 
 console.log(nome)
 
