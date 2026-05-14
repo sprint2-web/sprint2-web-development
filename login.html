@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <h1>Login</h1>
+
+    <form id="loginForm">
+
+        <input type="email" id="email" placeholder="Digite seu email">
+
+        <br><br>
+
+        <input type="password" id="senha" placeholder="Digite sua senha">
+
+        <br><br>
+
+        <button type="submit">Entrar</button>
+
+    </form>
+
+    <br>
+
+    <a href="index.html">Voltar</a>
+
+<script>
+
+const form = document.getElementById("loginForm")
+
+form.addEventListener("submit", (e)=>{
+
+    e.preventDefault()
+
+    const email = document.getElementById("email").value
+    const senha = document.getElementById("senha").value
+
+    if(email === "" || senha === ""){
+        alert("Preencha todos os campos")
+        return
+    }
+
+    if(senha.length < 6){
+        alert("Senha precisa ter pelo menos 6 caracteres")
+        return
+    }
+
+    alert("Login realizado com sucesso!")
+
+})
+
+</script>
+
+</body>
+</html>

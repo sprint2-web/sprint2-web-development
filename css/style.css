@@ -1,0 +1,15 @@
+body{
+    font-family: Arial;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.dark{
+    background-color: #121212;
+    color: white;
+}
+
+button{
+    padding: 10px;
+    cursor: pointer;
+}
